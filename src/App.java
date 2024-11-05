@@ -7,6 +7,7 @@ public class App {
         JFrame frame = new JFrame("Flappy Bird");
         // frame.setVisible(true);
         frame.setLocationRelativeTo(null);
+        frame.setLocation(0, 0);
         frame.setResizable(false);
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         frame.setSize(boardWidth, boardHeight); 
@@ -14,6 +15,7 @@ public class App {
         FlappyBird flappyBird = new FlappyBird();
         frame.add(flappyBird);
         frame.pack();
+        flappyBird.requestFocus();        
         frame.setVisible(true);
     }
 }
